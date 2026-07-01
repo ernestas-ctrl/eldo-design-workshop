@@ -1,0 +1,192 @@
+.card-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 8px;
+  background: var(--color-card-bg);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.card-description__label {
+  padding: 12px 24px 0;
+}
+
+.card-description__heading {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+}
+
+.card-description__user-info {
+  padding: 12px 24px;
+  border-bottom: 1px solid var(--color-page-bg);
+}
+
+.card-description__user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.card-description__avatar {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.card-description__user-details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.card-description__username-row {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.card-description__username {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}
+
+.card-description__badge {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+}
+
+.card-description__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 6px;
+  align-items: center;
+}
+
+.card-description__feedback {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  height: 24px;
+}
+
+.card-description__thumbs-up {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.card-description__feedback-score {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.card-description__reviews {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-text-link);
+  text-decoration: underline;
+  white-space: nowrap;
+}
+
+.card-description__reviews:hover {
+  text-decoration: none;
+}
+
+.card-description__description {
+  padding: 12px 24px;
+}
+
+.card-description__instructions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 48px;
+}
+
+.card-description__instructions-body {
+  display: flex;
+  flex-direction: column;
+  max-height: 96px;
+  overflow: hidden;
+}
+
+.card-description__instructions--expanded .card-description__instructions-body {
+  max-height: none;
+  overflow: visible;
+}
+
+.card-description__instruction-line {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color-text-primary);
+  word-break: break-word;
+}
+
+.card-description__fade {
+  position: absolute;
+  right: 0;
+  bottom: 48px;
+  left: 0;
+  height: 48px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--color-card-bg) 75%
+  );
+  pointer-events: none;
+}
+
+.card-description__toggle {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 24px 0 0;
+  border: 0;
+  background: transparent;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--color-text-primary);
+  cursor: pointer;
+}
+
+.card-description__toggle:hover {
+  opacity: 0.85;
+}
+
+.card-description__chevron {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.2s ease;
+}
+
+.card-description__chevron--up {
+  transform: rotate(180deg);
+}

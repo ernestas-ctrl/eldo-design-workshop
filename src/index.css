@@ -25,6 +25,7 @@
   --color-price: #367506;
   --color-price-badge-bg: rgba(209, 240, 143, 0.2);
   --color-chip-text: #14131a;
+  --color-text-link: #2d5ead;
   --color-check-on-yellow: #14131a;
   --color-page-bg: #f4f4f4;
   --color-missing-bg: #e0e0e0;
@@ -53,6 +54,7 @@
   --color-price: #367506;
   --color-price-badge-bg: rgba(209, 240, 143, 0.2);
   --color-chip-text: #14131a;
+  --color-text-link: #2d5ead;
   --color-check-on-yellow: #14131a;
   --color-page-bg: #f4f4f4;
   --color-missing-bg: #e0e0e0;
@@ -81,6 +83,7 @@
   --color-price: #c026a0;
   --color-price-badge-bg: rgba(255, 182, 230, 0.45);
   --color-chip-text: #7a1568;
+  --color-text-link: #7a3d9e;
   --color-check-on-yellow: #7a1568;
   --color-page-bg: #ffd6ec;
   --color-missing-bg: #ffc9e8;
@@ -109,6 +112,7 @@
   --color-price: #d1f08f;
   --color-price-badge-bg: rgba(209, 240, 143, 0.2);
   --color-chip-text: #ffffff;
+  --color-text-link: #6b9fd4;
   --color-check-on-yellow: #14131a;
   --color-page-bg: #0e0e11;
   --color-missing-bg: #323141;
