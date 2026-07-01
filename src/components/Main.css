@@ -1,8 +1,5 @@
 main {
+  display: flex;
+  justify-content: center;
   padding: 1.5rem;
-}
-
-main p {
-  margin: 0;
-  color: #444;
 }
