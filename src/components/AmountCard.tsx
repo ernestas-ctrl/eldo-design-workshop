@@ -1,5 +1,5 @@
-import multipleCoins from "../assets/multiple-coins.png";
-import twoCoins from "../assets/two-coins.png";
+import multipleCoins from "./assets/multiple-coins.png";
+import twoCoins from "./assets/two-coins.png";
 import "./AmountCard.css";
 
 export type AmountCardProps = {
