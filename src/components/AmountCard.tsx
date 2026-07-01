@@ -1,5 +1,7 @@
 import multipleCoins from "./assets/multiple-coins.png";
 import twoCoins from "./assets/two-coins.png";
+import catCrystalIcon from "./assets/cat-crystal.svg";
+import { useTheme } from "./theme/ThemeProvider";
 import "./AmountCard.css";
 
 export type AmountCardProps = {
@@ -44,7 +46,10 @@ export function AmountCard({
   selected = false,
   onSelect,
 }: AmountCardProps) {
-  const iconSrc = icon === "two" ? twoCoins : multipleCoins;
+  const { theme } = useTheme();
+  const isCatMode = theme === "cat";
+  const iconSrc = isCatMode ? catCrystalIcon : icon === "two" ? twoCoins : multipleCoins;
+  const displayProductName = isCatMode ? "Cat Crystals" : productName;
 
   return (
     <button
@@ -73,7 +78,7 @@ export function AmountCard({
           >
             {amount}
           </span>
-          <span className="amount-card__product">{productName}</span>
+          <span className="amount-card__product">{displayProductName}</span>
         </div>
       </div>
 

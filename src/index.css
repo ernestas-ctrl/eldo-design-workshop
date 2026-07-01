@@ -33,6 +33,34 @@
   --shadow-header: 0 2px 2px rgba(9, 9, 11, 0.05), 0 12px 4px rgba(9, 9, 11, 0.02);
 }
 
+[data-theme="cat"] {
+  --color-bg-body: #f4f4f4;
+  --color-bg-base: #ffffff;
+  --color-bg-alt: #ffffff;
+  --color-card-bg: #ffffff;
+  --color-text-primary: #14131a;
+  --color-text-secondary: #6a667b;
+  --color-border: #e7e7e7;
+  --color-border-alt: #e7e7e7;
+  --color-border-hover: #d0d0d0;
+  --color-input-stroke: #e7e7e7;
+  --color-input-bg: #ffffff;
+  --color-input-placeholder: #898a93;
+  --color-tab-active: #ffc950;
+  --color-brand-yellow: #ffc950;
+  --color-brand-yellow-16: rgba(255, 201, 80, 0.16);
+  --color-theme-switch-active-bg: rgba(255, 201, 80, 0.16);
+  --color-price: #367506;
+  --color-price-badge-bg: rgba(209, 240, 143, 0.2);
+  --color-chip-text: #14131a;
+  --color-check-on-yellow: #14131a;
+  --color-page-bg: #f4f4f4;
+  --color-missing-bg: #e0e0e0;
+  --color-missing-text: #898a93;
+  --shadow-card: 0 2px 2px rgba(9, 9, 11, 0.05), 0 12px 4px rgba(9, 9, 11, 0.02);
+  --shadow-header: 0 2px 2px rgba(9, 9, 11, 0.05), 0 12px 4px rgba(9, 9, 11, 0.02);
+}
+
 [data-theme="unicorn"] {
   --color-bg-body: #ffe8f4;
   --color-bg-base: #fff0f8;

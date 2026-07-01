@@ -126,6 +126,21 @@
   box-shadow: 0 0 8px rgba(255, 105, 180, 0.45);
 }
 
+.header-theme-switch__button--cat {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.header-theme-switch__cat-icon {
+  display: block;
+  transform: scale(0.95);
+}
+
+[data-theme="cat"] .header-theme-switch__button--cat.header-theme-switch__button--active {
+  background: rgba(255, 153, 51, 0.28);
+  box-shadow: 0 0 8px rgba(255, 153, 51, 0.4);
+}
+
 [data-theme="dark"] .header-icon {
   filter: brightness(0) invert(0.92);
 }

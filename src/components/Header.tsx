@@ -78,6 +78,17 @@ export function Header() {
                 🦄
               </span>
             </button>
+            <button
+              type="button"
+              className={`header-theme-switch__button header-theme-switch__button--cat${theme === "cat" ? " header-theme-switch__button--active" : ""}`}
+              aria-label="Cat mode"
+              aria-pressed={theme === "cat"}
+              onClick={() => setTheme("cat")}
+            >
+              <span className="header-theme-switch__cat-icon" aria-hidden="true">
+                🐱
+              </span>
+            </button>
           </div>
         </div>
       </div>
