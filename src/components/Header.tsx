@@ -1,16 +1,16 @@
 import "./Header.css";
 
-import logo from "../assets/header/logo.svg";
-import messageIcon from "../assets/header/message.svg";
-import moonIcon from "../assets/header/moon.svg";
-import notificationIcon from "../assets/header/notification.svg";
-import searchIcon from "../assets/header/search.svg";
-import signRightIcon from "../assets/header/sign-right.svg";
-import sunIcon from "../assets/header/sun.svg";
-import supportIcon from "../assets/header/support.svg";
-import switchIcon from "../assets/header/switch.svg";
-import userAvatar from "../assets/header/user-avatar.png";
-import { useTheme } from "../theme/ThemeProvider";
+import logo from "./assets/header/logo.svg";
+import messageIcon from "./assets/header/message.svg";
+import moonIcon from "./assets/header/moon.svg";
+import notificationIcon from "./assets/header/notification.svg";
+import searchIcon from "./assets/header/search.svg";
+import signRightIcon from "./assets/header/sign-right.svg";
+import sunIcon from "./assets/header/sun.svg";
+import supportIcon from "./assets/header/support.svg";
+import switchIcon from "./assets/header/switch.svg";
+import userAvatar from "./assets/header/user-avatar.png";
+import { useTheme } from "./theme/ThemeProvider";
 
 const NAV_ITEMS = ["Currency", "Accounts", "Top Ups", "Items", "Boosting"] as const;
 

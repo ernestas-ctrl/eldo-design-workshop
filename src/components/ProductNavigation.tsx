@@ -1,7 +1,7 @@
 import "./ProductNavigation.css";
 
-import genshinImpactIcon from "../assets/product-navigation/genshin-impact.png";
-import tabActiveBg from "../assets/product-navigation/tab-active-bg.svg";
+import genshinImpactIcon from "./assets/product-navigation/genshin-impact.png";
+import tabActiveBg from "./assets/product-navigation/tab-active-bg.svg";
 
 const TABS = [
   { label: "Accounts", active: false },

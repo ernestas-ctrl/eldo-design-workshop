@@ -12,7 +12,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
-  color: #14131a;
+  color: var(--color-text-primary);
 }
 
 .game-region-selector__options {
@@ -29,7 +29,7 @@
   gap: 4px;
   height: 32px;
   padding: 4px 8px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--color-border-alt);
   border-radius: 4px;
   background: transparent;
   cursor: pointer;
@@ -37,22 +37,22 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  color: #14131a;
+  color: var(--color-chip-text);
 }
 
 .game-region-chip:hover {
-  border-color: #d0d0d0;
+  border-color: var(--color-border-hover);
 }
 
 .game-region-chip--selected {
-  border: 2px solid #ffc950;
-  background: rgba(255, 201, 80, 0.16);
+  border: 2px solid var(--color-brand-yellow);
+  background: var(--color-brand-yellow-16);
   font-weight: 700;
 }
 
 .game-region-chip__icon {
   flex-shrink: 0;
-  color: #14131a;
+  color: var(--color-chip-text);
 }
 
 .game-region-chip__label {
