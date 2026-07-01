@@ -5,7 +5,7 @@ import tabActiveBg from "./assets/product-navigation/tab-active-bg.svg";
 
 const TABS = [
   { label: "Accounts", active: false },
-  { label: "Top Ups", active: true },
+  { label: "Top ups", active: true },
   { label: "Boosting", active: false },
 ] as const;
 
@@ -19,7 +19,7 @@ export function ProductNavigation() {
             alt=""
             className="product-navigation__game-icon"
           />
-          <span className="product-navigation__game-title">Genshin Impact Top Ups</span>
+          <span className="product-navigation__game-title">Genshin Impact top ups</span>
         </div>
 
         <div className="product-navigation__tabs" role="tablist">

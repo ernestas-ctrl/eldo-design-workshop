@@ -12,7 +12,7 @@ import switchIcon from "./assets/header/switch.svg";
 import userAvatar from "./assets/header/user-avatar.png";
 import { useTheme } from "./theme/ThemeProvider";
 
-const NAV_ITEMS = ["Currency", "Accounts", "Top Ups", "Items", "Boosting"] as const;
+const NAV_ITEMS = ["Currency", "Accounts", "Top ups", "Items", "Boosting"] as const;
 
 function DropdownItem({ label }: { label: string }) {
   return (
@@ -41,7 +41,7 @@ export function Header() {
       <div className="header-secondary">
         <div className="header-secondary__support">
           <img src={supportIcon} alt="" className="header-secondary__support-icon header-icon" />
-          <span>24/7 Live Support</span>
+          <span>24/7 human support</span>
         </div>
 
         <div className="header-secondary__actions">
