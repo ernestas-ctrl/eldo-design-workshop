@@ -1,5 +1,6 @@
 import { AmountSelector } from "./AmountSelector";
 import { GameRegionSelector } from "./GameRegionSelector";
+import { TopUpsSellersList } from "./TopUpsSellersList";
 import { useThemeCopy } from "./theme/useThemeCopy";
 import "./Main.css";
 
@@ -37,13 +38,7 @@ export function Main() {
           </aside>
         </div>
 
-        <section className="main__sellers-section" aria-labelledby="other-sellers-title">
-          <h2 id="other-sellers-title" className="main__sellers-title">
-            {copy("Other sellers (10)")}
-          </h2>
-          <MissingComponent label="component missing" className="main__missing--sellers-list" />
-          <MissingComponent label="component missing" className="main__missing--pagination" />
-        </section>
+        <TopUpsSellersList />
       </div>
     </main>
   );
