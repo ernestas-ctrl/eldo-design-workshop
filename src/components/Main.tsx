@@ -1,19 +1,24 @@
 import { AmountSelector } from "./AmountSelector";
 import { GameRegionSelector } from "./GameRegionSelector";
+import { useThemeCopy } from "./theme/useThemeCopy";
 import "./Main.css";
 
 const DISCLAIMER =
   "*Prices shown are compared to official in-game store prices at the time of listing. Discounts reflect price differences only and do not imply affiliation with or endorsement by the game publisher. The displayed price is not final and a payment fee will be added at checkout.";
 
 function MissingComponent({ label, className }: { label?: string; className?: string }) {
+  const copy = useThemeCopy();
+
   return (
     <div className={`main__missing${className ? ` ${className}` : ""}`}>
-      {label ?? "component missing"}
+      {copy(label ?? "component missing")}
     </div>
   );
 }
 
 export function Main() {
+  const copy = useThemeCopy();
+
   return (
     <main className="main">
       <div className="main__inner">
@@ -23,7 +28,7 @@ export function Main() {
               <GameRegionSelector defaultValue="EU" />
               <AmountSelector />
             </div>
-            <p className="main__disclaimer">{DISCLAIMER}</p>
+            <p className="main__disclaimer">{copy(DISCLAIMER)}</p>
           </div>
 
           <aside className="main__sidebar">
@@ -34,7 +39,7 @@ export function Main() {
 
         <section className="main__sellers-section" aria-labelledby="other-sellers-title">
           <h2 id="other-sellers-title" className="main__sellers-title">
-            Other sellers (10)
+            {copy("Other sellers (10)")}
           </h2>
           <MissingComponent label="component missing" className="main__missing--sellers-list" />
           <MissingComponent label="component missing" className="main__missing--pagination" />

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { AmountCard } from "./AmountCard";
+import { useThemeCopy } from "./theme/useThemeCopy";
 import "./AmountSelector.css";
 
 const AMOUNT_OPTIONS = [
@@ -87,13 +88,14 @@ const AMOUNT_OPTIONS = [
 
 export function AmountSelector() {
   const [selectedId, setSelectedId] = useState("8080");
+  const copy = useThemeCopy();
 
   return (
     <section className="amount-selector" aria-labelledby="amount-selector-title">
       <h2 id="amount-selector-title" className="amount-selector__title">
-        Amount
+        {copy("Amount")}
       </h2>
-      <div className="amount-selector__grid" role="group" aria-label="Select amount">
+      <div className="amount-selector__grid" role="group" aria-label={copy("Select amount")}>
         {AMOUNT_OPTIONS.map((option) => (
           <AmountCard
             key={option.id}

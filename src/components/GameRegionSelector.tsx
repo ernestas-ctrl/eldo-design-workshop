@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useThemeCopy } from "./theme/useThemeCopy";
 import "./GameRegionSelector.css";
 
 const REGIONS = ["EU", "NA", "Asia", "TW, HK, MO"] as const;
@@ -33,6 +34,8 @@ function CheckIcon() {
 }
 
 function Chip({ label, selected, onSelect }: ChipProps) {
+  const copy = useThemeCopy();
+
   return (
     <button
       type="button"
@@ -41,7 +44,7 @@ function Chip({ label, selected, onSelect }: ChipProps) {
       onClick={onSelect}
     >
       {selected && <CheckIcon />}
-      <span className="game-region-chip__label">{label}</span>
+      <span className="game-region-chip__label">{copy(label)}</span>
     </button>
   );
 }
@@ -56,6 +59,7 @@ export function GameRegionSelector({
   onChange,
 }: GameRegionSelectorProps) {
   const [selected, setSelected] = useState<Region>(defaultValue);
+  const copy = useThemeCopy();
 
   const handleSelect = (region: Region) => {
     setSelected(region);
@@ -64,11 +68,11 @@ export function GameRegionSelector({
 
   return (
     <div className="game-region-selector">
-      <p className="game-region-selector__label">Game region</p>
+      <p className="game-region-selector__label">{copy("Game region")}</p>
       <div
         className="game-region-selector__options"
         role="group"
-        aria-label="Game region"
+        aria-label={copy("Game region")}
       >
         {REGIONS.map((region) => (
           <Chip
