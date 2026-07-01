@@ -1,7 +1,4 @@
 .amount-card {
-  --amount-card-bg: #ffffff;
-  --amount-card-border: #e7e7e7;
-
   position: relative;
   display: flex;
   flex-direction: column;
@@ -10,9 +7,9 @@
   width: 143px;
   min-height: 192px;
   padding: 10px;
-  border: 1px solid var(--amount-card-border);
+  border: 1px solid var(--color-border-alt);
   border-radius: 8px;
-  background: var(--amount-card-bg);
+  background: var(--color-card-bg);
   text-align: left;
   cursor: pointer;
   font-family: inherit;
@@ -20,15 +17,14 @@
 }
 
 .amount-card:hover:not(.amount-card--selected) {
-  border-color: #d0d0d0;
+  border-color: var(--color-border-hover);
 }
 
 .amount-card--selected {
-  --amount-card-border: #ffc950;
-  border-width: 2px;
+  border: 2px solid var(--color-brand-yellow);
   background:
-    linear-gradient(90deg, rgba(255, 201, 80, 0.16), rgba(255, 201, 80, 0.16)),
-    #ffffff;
+    linear-gradient(90deg, var(--color-brand-yellow-16), var(--color-brand-yellow-16)),
+    var(--color-card-bg);
 }
 
 .amount-card__check {
@@ -41,8 +37,8 @@
   width: 20px;
   height: 20px;
   border-radius: 999px;
-  background: #ffc950;
-  color: #14131a;
+  background: var(--color-brand-yellow);
+  color: var(--color-check-on-yellow);
 }
 
 .amount-card__top {
@@ -69,7 +65,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  color: #14131a;
+  color: var(--color-text-primary);
 }
 
 .amount-card__amount--bold {
@@ -80,7 +76,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  color: #6a667b;
+  color: var(--color-text-secondary);
 }
 
 .amount-card__pricing {
@@ -93,7 +89,7 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.4;
-  color: #6a667b;
+  color: var(--color-text-secondary);
   text-decoration: line-through;
 }
 
@@ -108,7 +104,7 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.5;
-  color: #367506;
+  color: var(--color-price);
   white-space: nowrap;
 }
 
@@ -119,10 +115,10 @@
   height: 20px;
   padding: 0 4px;
   border-radius: 4px;
-  background: rgba(209, 240, 143, 0.2);
+  background: var(--color-price-badge-bg);
   font-size: 12px;
   font-weight: 700;
   line-height: 1.4;
-  color: #367506;
+  color: var(--color-price);
   white-space: nowrap;
 }
